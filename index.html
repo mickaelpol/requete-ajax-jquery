@@ -4,11 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>templates</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>requete ajax</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+
+
+  <div class="container">
+    <div class="row">
+      <!-- bouton d'envoi et recupération d'info en ajax -->
+      <div class="col-xs-4 col-xs-offset-4 text-center">
+        <button class="btn btn-success btn-md" id="envoyer" type="button">Envoyer</button>
+        <button class="btn btn-primary btn-md" id="recuperer" type="button">Recuperer</button>
+      </div>
+      <!-- fin des boutons -->
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 text-center ">
+        <p><span id="message"></span></p>
+        <p><span id="message1"></span></p>
+        <div id="loader" class="loader center-block"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <p><span id="recuperation"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
 
